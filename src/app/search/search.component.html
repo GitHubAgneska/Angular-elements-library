@@ -1,0 +1,24 @@
+
+<div class="searchBar-container">
+  <input id="searchBar" class="searchBlock" type="text" name="" #search placeholder="enter a character name">
+  <button (click)="loadData(search.value)">
+    <img [src]="goArrow" class="go-icon">
+  </button>
+  <button (click)="resetSearch(search.value='')" style="background-color: red;">X</button>
+</div>
+
+<div>
+  <p>{{match}}</p>
+</div>
+
+<!--
+<div>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+</div> -->
+
+<!-- <div *ngFor="let item of charactersList">
+  <p> {{ item.name }} </p>
+  <p>"{{ item.quote }}"</p>
+</div> -->
+
+

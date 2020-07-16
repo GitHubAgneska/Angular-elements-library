@@ -1,0 +1,40 @@
+.searchBar-container {
+  display: flex;
+  flex-direction: row;
+}
+.searchBlock {
+  background-color: rgb(212, 212, 212);
+  border-radius: 15px;
+  width: 90%;
+  height: 3rem;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  color: white;
+}
+
+.searchBlock:focus {
+  background-color: lightblue;
+  border: 1px solid white;
+}
+
+.searchBlock::placeholder {
+  color: rgb(192, 129, 129);
+  text-transform: capitalize;
+}
+
+.go-btn {
+  /* margin-left:2%; */
+  cursor: pointer;
+  text-align: center;
+  padding: 1%;
+  border: none;
+  background-color: lightblue;
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.go-icon {
+  width: 1.5rem;
+}

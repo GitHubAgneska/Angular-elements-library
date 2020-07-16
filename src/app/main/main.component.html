@@ -1,0 +1,23 @@
+<div class="mainTitle">
+  <h1 class="mainHeader">
+    Angular elements library
+  </h1>
+  <img width="100" alt="Angular Logo"
+    src={{angularLogo}}>
+</div>
+
+
+<div>
+  <app-header elementHeader="Modal element"></app-header>
+  <button (click)="openModal()">open modal!</button>
+  <app-modal *ngIf="modalWindow" (closeModal)="onCloseModal($event)"></app-modal>
+</div>
+
+<div>
+  <app-header elementHeader="Search element"></app-header>
+  <app-search></app-search>
+</div>
+
+<div>
+  <app-clickcount></app-clickcount>
+</div>
