@@ -35,7 +35,8 @@ import { CheckboxComponent } from './layoutElements/forms/form-components/checkb
 import { FileUploadComponent } from './layoutElements/forms/form-components/file-upload/file-upload';
 import { TextareaComponent } from './layoutElements/forms/form-components/textarea/textarea.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { MatDatepickerModule }  from '@angular/material/datepicker';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { ReactiveSearchComponent } from './reactive-search/reactive-search.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { MatDatepickerModule }  from '@angular/material/datepicker';
     RadiobuttonComponent,
     CheckboxComponent,
     FileUploadComponent,
-    TextareaComponent
+    TextareaComponent,
+    ReactiveSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -66,6 +68,7 @@ import { MatDatepickerModule }  from '@angular/material/datepicker';
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     MatDatepickerModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

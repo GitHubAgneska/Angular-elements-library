@@ -14,11 +14,16 @@
 </div>
 
 <div>
-  <app-header elementHeader="Search element"></app-header>
+  <app-header [elementHeader]="searchElementName"></app-header>
   <app-search></app-search>
+</div>
+<div>
+  <app-header elementHeader="Reactive search element"></app-header>
+  <app-reactive-search></app-reactive-search>
 </div>
 
 <div>
+  <app-header elementHeader="Click count element"></app-header>
   <app-clickcount></app-clickcount>
 </div>
 

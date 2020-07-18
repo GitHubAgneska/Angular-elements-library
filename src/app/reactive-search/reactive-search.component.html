@@ -1,0 +1,25 @@
+
+
+
+<input
+  type="text"
+  id="user-input"
+  (onChange)="onSearchInput()"
+  placeholder="Search for a character.."
+  [formControl]="name"
+  value=''>
+  <p>
+    Current search: {{ name.value }}
+  </p>
+
+<div *ngFor="let character of charactersList" class="characters-list">
+  <div class="character">
+    <div class="character-img">
+      <img src="{{character.img}}">
+    </div>
+    <div class="character-name">
+      <h3>{{ character.firstName }} </h3>
+      <h3>{{ character.lastName }}</h3>
+    </div>
+  </div>
+</div>

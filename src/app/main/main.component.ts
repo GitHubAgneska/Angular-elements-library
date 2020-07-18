@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-main',
@@ -10,11 +9,14 @@ export class MainComponent implements OnInit {
 
   public angularLogo = '../assets/logos/angular_logo_custom.png';
 
+  // header element dynamic title
+  public searchElementName = 'Basic search element';
   // modal
   public modalWindow: boolean;
 
   // search
   public term: string;
+
 
   constructor() {
     this.modalWindow = false;
@@ -26,8 +28,6 @@ export class MainComponent implements OnInit {
   public onCloseModal() {
     this.modalWindow = false;
   }
-
-  // search
 
 
   ngOnInit() {}

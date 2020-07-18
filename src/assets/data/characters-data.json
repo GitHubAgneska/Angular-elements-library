@@ -1,6 +1,6 @@
 [
   { "id": 1,
-    "firsName":"Saul",
+    "firstName":"Saul",
     "lastName": "Goodman",
     "location":"",
     "origin":"",
@@ -9,7 +9,7 @@
     "img":""
   },
   { "id": 2,
-    "firsName":"Bojack",
+    "firstName":"Bojack",
     "lastName": "Horseman",
     "location":"",
     "origin":"",
@@ -18,7 +18,7 @@
     "img":""
   },
   { "id": 3,
-    "firsName":"Andy",
+    "firstName":"Andy",
     "lastName": "Botwin",
     "location":"",
     "origin":"",
@@ -27,7 +27,7 @@
     "img":""
   },
   { "id": 4,
-    "firsName":"Elliot",
+    "firstName":"Elliot",
     "lastName": "Alderson",
     "location":"",
     "origin":"",
@@ -36,7 +36,7 @@
     "img":""
   },
   { "id": 5,
-    "firsName":"Dale",
+    "firstName":"Dale",
     "lastName": "Cooper",
     "location":"",
     "origin":"",
@@ -45,7 +45,7 @@
     "img":""
   },
   { "id": 6,
-    "firsName":"Nadia",
+    "firstName":"Nadia",
     "lastName": "Vulvokov",
     "location":"",
     "origin":"",
@@ -55,8 +55,8 @@
     "img":""
   },
   { "id": 7,
-    "firsName":"Fleabag",
-    "lastName": "unknown",
+    "firstName":"Fleabag",
+    "lastName": "",
     "location":"",
     "origin":"",
     "occupation":"",
@@ -64,7 +64,7 @@
     "img":""
   },
   { "id": 8,
-    "firsName":"Roger",
+    "firstName":"Roger",
     "lastName": "Smith",
     "location":"",
     "origin":"",

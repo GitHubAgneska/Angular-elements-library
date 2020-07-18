@@ -30,9 +30,11 @@ export class SearchComponent implements OnInit {
     this.dataService.getCharactersList().subscribe(data => {
       this.charactersList = data;
       this.charactersList.filter(item => {
-        const name = item.name.toLowerCase();
-        if ( name.includes(this.term) ) {
-          console.log('item.name==', item.name);
+        const firstName = item.firstName.toLowerCase();
+        const lastName = item.lastName.toLowerCase();
+
+        if ( firstName.includes(this.term) || (lastName.includes(this.term))) {
+          console.log('item.firstName==', item.firstName);
           this.match = item.quote;
           console.log('quote==', this.match);
         }
@@ -46,4 +48,6 @@ export class SearchComponent implements OnInit {
   }
 
 }
+
+// return item.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
 
