@@ -1,0 +1,23 @@
+@import 'layout';
+@import 'fonts';
+@import 'themes';
+
+
+.mat-form-field {
+  font-size: 15px;
+}
+
+
+.mat-form-field-infix {
+  border-top: 0.1em solid transparent;
+  width: 15rem !important;
+}
+
+input.mat-input-element {
+  margin-top: 1rem;
+  color: darken($light-color, 5);
+  font-size: $s-fz * 1.1;
+  font-family: $nunito;
+  font-weight: 300;
+}
+

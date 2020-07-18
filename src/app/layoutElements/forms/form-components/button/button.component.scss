@@ -1,0 +1,11 @@
+@import "fonts";
+@import "themes";
+@import "layout";
+
+@media screen and (max-width: $md-breakpoint) {
+  button {
+    margin-right: 10%;
+    margin-left: 50%;
+
+  }
+}

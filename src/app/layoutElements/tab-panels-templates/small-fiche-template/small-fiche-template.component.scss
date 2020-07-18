@@ -1,0 +1,65 @@
+@import "layout";
+@import "fonts";
+@import "themes";
+
+.modeleFiche-container {
+  z-index: 1;
+  height: 100vh;
+  padding-top: 4vh;
+}
+
+@media screen and (max-width: $md-breakpoint) {
+  .modeleFiche-container {
+    height: 80vh;
+  }
+}
+
+.fiche-container {
+  /* border:1px solid red; */
+  height: 70vh;
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+.tabPane {
+  /*  border:1px solid yellow; */
+  height: 5vh;
+  width: 15%;
+  background-color: $color1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: $md-breakpoint) {
+  .tabPane {
+    display: none;
+  }
+  .fiche-container {
+    width: 100%;
+  }
+}
+
+.tabPane > p {
+  color: $light-color;
+}
+
+.tabBody {
+  min-height: 65vh;
+  width: 100%;
+  background: $gradient1;
+  box-shadow: -8px 10px 11px -5px lighten($dark-color, 10);
+  -webkit-box-shadow: -8px 10px 11px -5px lighten($dark-color, 10);
+  -moz-box-shadow: -8px 10px 11px -5px lighten($dark-color, 10);
+}
+
+@media screen and (max-width: $md-breakpoint) {
+  .tabBody {
+    padding-top: 5%;
+    box-shadow: none;
+    background: transparent;
+  }
+}

@@ -1,0 +1,54 @@
+@import "layout";
+
+.dynamic-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0% 10% 5% 10%; /* == !margin-top affects tabPane-tabBody layout! == */
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+:host-context(app-general-info-form) .dynamic-form,
+:host-context(app-general-info-details) .dynamic-form,
+:host-context(app-new-poste-form) .dynamic-form,
+:host-context(app-modal-poste) .dynamic-form
+{
+  max-height: 45vh;
+}
+
+:host-context(app-contract-info-details) .dynamic-form {
+  max-height: 60vh;
+}
+
+
+@media screen and (max-width: $sm-breakpoint) {
+  :host-context(app-general-info-form) .dynamic-form,
+  :host-context(app-general-info-details) .dynamic-form,
+  :host-context(app-new-poste-form) .dynamic-form,
+  :host-context(app-modal-poste) .dynamic-form,
+  :host-context(app-contract-form) .dynamic-form,
+  :host-context(app-materiel-form-step1) .dynamic-form,
+  :host-context(app-ticket-details) .dynamic-form,
+  :host-context(app-materiel-info-details) .dynamic-form
+  {
+    max-height: none;
+    display: inline;
+  }
+
+  :host-context(app-contract-info-details) .dynamic-form {
+    margin-top: 10vh;
+   /*  display: initial; */
+  }
+}
+
+@media screen and (max-width: $md-breakpoint ) {
+  :host-context(app-new-poste-form) .dynamic-form {
+    max-height: none;
+  }
+}
+
+
+
+

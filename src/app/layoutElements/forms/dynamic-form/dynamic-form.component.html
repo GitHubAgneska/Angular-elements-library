@@ -1,0 +1,10 @@
+<form
+    [formGroup]="form"
+    class="dynamic-form"
+    (save)="onSubmit($event)">
+    <ng-container
+      *ngFor="let field of fields;"
+      dynamicField [field]="field"
+      [group]="form">
+    </ng-container>
+</form>

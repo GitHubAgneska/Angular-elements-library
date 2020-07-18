@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
 import { DataService } from '../data.service';
 
 @Component({
@@ -12,7 +11,6 @@ export class SearchComponent implements OnInit {
   @Input() term: string;
 
   public goArrow = 'assets/logos/icon_arrow_go_white_300x.png';
-  public placeholder = 'character name';
   public charactersList: any[];
 
   public match: any;
@@ -33,18 +31,14 @@ export class SearchComponent implements OnInit {
       this.charactersList = data;
       this.charactersList.filter(item => {
         const name = item.name.toLowerCase();
-
         if ( name.includes(this.term) ) {
-        // if ( item.name === this.term ) {
           console.log('item.name==', item.name);
           this.match = item.quote;
           console.log('quote==', this.match);
         }
-        // else { this.match = 'sorry no match !' ; } => why?
       });
       return this.match ? !'' : this.match = 'Sorry no match!';
     });
-
   }
 
   public resetSearch() {

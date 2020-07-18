@@ -1,0 +1,21 @@
+@import 'layout';
+@import 'fonts';
+@import 'themes';
+
+mat-checkbox {
+  color: $light-color !important;
+  font-size: 15px;
+  margin-top: 3%;
+}
+
+mat-checkbox-container {
+  margin-bottom: 5%;
+}
+
+.mat-checkbox-disabled {
+  color: $light-color !important;
+  font-size: 13px;
+}
+.mat-checkbox-disabled.mat-checkbox-label {
+  color: $light-color !important;
+}

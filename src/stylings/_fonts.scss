@@ -1,0 +1,56 @@
+// uniquement les imports de nos typos et les font size pour chaque element de typos (titres, p, a, li, span)
+
+// all screens font sizes
+
+$h1-fontsize: 2rem;
+$h2-fontsize: 1.5rem;
+$h3-fontsize: 1.2rem;
+
+$regular-fontsize: 1rem;
+
+$small-fontsize:0.8em;
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(src/assets/fonts/Comfortaa[wght].ttf);
+}
+$comfortaa: Comfortaa;
+
+
+@font-face {
+  font-family: Montserrat;
+  src: url(src/assets/fonts/Montserrat-Regular.ttf);
+}
+$montserrat: Montserrat;
+
+
+@font-face {
+  font-family: Nunito;
+  src: url(src/assets/fonts/Nunito-Regular.ttf);
+}
+$nunito: Nunito;
+
+
+@font-face {
+  font-family: Questrial;
+  src: url(src/assets/fonts/Questrial-Regular.ttf);
+}
+$questrial: Questrial;
+
+@font-face {
+  font-family: Roboto;
+  src: url(src/assets/fonts/Roboto-Regular.ttf);
+}
+$roboto: Roboto;
+
+$xl-fz: 2rem;
+$l-fz: 1.8rem;
+$m-fz: 1.3rem;
+$s-fz: 1rem;
+$xs-fz: 0.8rem;
+$xxs-fz: 0.6rem;
+
+
+
+
+

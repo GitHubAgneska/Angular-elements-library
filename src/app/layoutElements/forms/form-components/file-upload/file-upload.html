@@ -1,0 +1,18 @@
+<div id="app-upload-container" [formGroup]="group" class="row uploadArea">
+  <div class="add-btn" class="col-6">
+    <button type="button" (click)="openModal()" mat-raised-button>{{field.label}}</button>
+  </div>
+</div>
+
+<!--
+  (click)="toggleFileUpload()"
+  <div *ngIf="showFileUpload" class="drop-container dropzone col-6">
+      <label class="upload-button">
+        <input [formControlName]="field.name"
+              [type]="field.inputType"
+              accept="image/*"
+              (change)="onSelectFile(file)"
+              /> Ajouter
+      </label>
+      <img [src]="url" height="200" />
+    </div> -->

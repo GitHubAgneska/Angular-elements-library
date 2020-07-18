@@ -1,0 +1,27 @@
+<div [ngSwitch]="viewToDisplay" class="new-customer-page-container">
+
+  <!-- ======= SWITCH CASE  : contract form   ===== -->
+  <ng-template [ngSwitchCase]="'characterForm'">
+    <app-small-fiche-template>
+      <app-character-form></app-character-form>
+    </app-small-fiche-template>
+    <!-- <app-cancel-button></app-cancel-button> -->
+  </ng-template>
+
+  <!-- ======= SWITCH CASE  : materiel form step 1   ===== -->
+  <ng-template [ngSwitchCase]="'materielFormStep1'">
+    <app-small-fiche-template>
+      <!-- <app-materiel-form-step1></app-materiel-form-step1> -->
+
+    </app-small-fiche-template>
+  </ng-template>
+
+  <!-- ======= SWITCH DEFAULT : general info form  ===== -->
+  <ng-template ngSwitchDefault>
+    <app-big-fiche-template>
+      <app-character-form></app-character-form>
+    </app-big-fiche-template>
+    <!--  <app-cancel-button></app-cancel-button> -->
+  </ng-template>
+
+</div>

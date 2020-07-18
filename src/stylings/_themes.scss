@@ -1,0 +1,13 @@
+$light-color: #ffffff;
+$dark-color: #0e0e0e;
+$color1: #007284;
+$color2: #322C56;
+$color-info: #01bce6;
+$color-success: #00d0a6;
+$color-alert: #f94747;
+
+$gradient1: linear-gradient(180deg, $color1 0%, $dark-color 100%);
+$gradient2: linear-gradient(180deg, $dark-color 0%,  $color1 100% );
+
+$gradientNavbar: linear-gradient(124deg, rgba(1, 176, 207, 0) 2%, rgb(51, 44, 87) 58%);
+$gradientNavbarInvert: linear-gradient(180deg, $color2 100%, $dark-color 0% );

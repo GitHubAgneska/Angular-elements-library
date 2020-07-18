@@ -1,0 +1,11 @@
+// uniquement les breakpoints (conformes au framework css choisi), les gouttières, margin et padding pour la page et les blocs de section.
+
+// breakpoints
+$sm-breakpoint: 576px;
+$md-breakpoint: 812px;  // 812px = iphoneX landscape
+/* $md-breakpoint: 768px; */
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+// gutters size
+$gutters: 15px;

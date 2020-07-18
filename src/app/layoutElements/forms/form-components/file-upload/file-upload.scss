@@ -1,0 +1,44 @@
+.uploadArea {
+  border: 1px solid red;
+  align-items: center;
+}
+
+.drop-container {
+  border-radius: 6px;
+  height: 50px;
+  width: 60%;
+  box-shadow: 1px 2px 20px hsla(0, 0%, 4%, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #c0c4c7;
+}
+
+.upload-button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffff;
+}
+.upload-button input {
+  display: none;
+}
+.dropzone {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+progress::-webkit-progress-value {
+  transition: width 0.1s ease;
+}
+
+.mat-fab,
+.mat-flat-button,
+.mat-mini-fab,
+.mat-raised-button {
+  color: lightgrey !important;
+  background-color: transparent !important;
+}
