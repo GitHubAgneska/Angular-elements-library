@@ -1,4 +1,4 @@
-export interface Validator {
+export interface IValidator {
   name: string;
   validator: any;
   message: string;
@@ -16,5 +16,5 @@ export interface FieldConfig {
   disabled?: boolean;
   options?: string[];
   collections?: any;
-  validations?: Validator[];
+  validations?: IValidator[];
 }

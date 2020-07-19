@@ -27,21 +27,19 @@ export class CharacterFormComponent implements OnInit {
   propertyFieldConfig: FieldConfig;
   propertyFieldSConfig: FieldConfig[];
 
+
+  // test hard-coded field
   propertyFieldConfigTest: FieldConfig[] = [
 
-    {
-      type: 'input', label: 'Nom', inputType: 'text', name: 'nom', value: '',
-      validations: [
-        { name: 'required', validator: Validators.required, message: 'champ obligatoire!' },
-        {
-          name: 'pattern',
-          validator: Validators.pattern('^[A-Za-z0-9 &-.]+$'),
-          message: ''
-        }]
+    { type: 'input', label: 'Nom', inputType: 'text', name: 'nom', value: '',
+        validations: [
+          { name: 'required', validator: Validators.required, message: 'champ obligatoire!' },
+          { name: 'pattern', validator: Validators.pattern('^[A-Za-z0-9 &-.]+$'), message: '' }
+        ]
     }];
 
-  constructor() {
 
+  constructor() {
     //  ! Shallow copies ...
     this.character = new Character();
     this.newCharacter = Object.assign({}, this.character);
@@ -49,6 +47,7 @@ export class CharacterFormComponent implements OnInit {
 
     this.propertyFieldSConfig = new Array();
   }
+
 
   ngOnInit() {
     this.setFieldConfig();
@@ -74,7 +73,7 @@ export class CharacterFormComponent implements OnInit {
       value = this.propertyFieldConfig;
       // console.log(this.propertyFieldConfig);
 
-      // add an if statement for different fields types (ie if type ='select', only 'options' field will be generated )
+      // add an if statement for different fields types (ie if type ='select', only the 'options' field will be generated )
       // +  modify fieldConfigModel to have different fields models (easier than setting it manually here with conditions)
       this.propertyFieldConfig.type = 'input';
       this.propertyFieldConfig.inputType = 'text';
