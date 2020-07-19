@@ -1,6 +1,6 @@
 <div [ngSwitch]="viewToDisplay" class="new-customer-page-container">
 
-  <!-- ======= SWITCH CASE  : contract form   ===== -->
+  <!-- ======= SWITCH CASE  : character form   ===== -->
   <ng-template [ngSwitchCase]="'characterForm'">
     <app-small-fiche-template>
       <app-character-form></app-character-form>
@@ -11,12 +11,11 @@
   <!-- ======= SWITCH CASE  : materiel form step 1   ===== -->
   <ng-template [ngSwitchCase]="'materielFormStep1'">
     <app-small-fiche-template>
-      <!-- <app-materiel-form-step1></app-materiel-form-step1> -->
 
     </app-small-fiche-template>
   </ng-template>
 
-  <!-- ======= SWITCH DEFAULT : general info form  ===== -->
+  <!-- ======= SWITCH DEFAULT : character form  ===== -->
   <ng-template ngSwitchDefault>
     <app-big-fiche-template>
       <app-character-form></app-character-form>

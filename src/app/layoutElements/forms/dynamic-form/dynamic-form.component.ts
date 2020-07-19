@@ -4,7 +4,7 @@ import { FieldConfig } from '../field.interface';
 
 @Component({
   exportAs: 'dynamicForm',
-  selector: 'app-dynamic-form',
+  selector: 'app-dynamic-form', // + app-
   templateUrl: './dynamic-form.component.html',
   styleUrls: ['./dynamic-form.component.scss']
 })
@@ -16,7 +16,9 @@ export class DynamicFormComponent implements OnInit, OnChanges {
   @Input() disabled: boolean;
 
   form: FormGroup;
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {
+    this.form = new FormGroup({});
+  }
 
   ngOnInit() {
     // console.log(this.fields);
@@ -27,9 +29,9 @@ export class DynamicFormComponent implements OnInit, OnChanges {
         control.disable();
       });
     }
-    /*  console.log('CONTROLS', this.form.controls);
-        console.log('FORM', this.form);
-        console.log('NOM', this.form.get('nom')); */
+    console.log('CONTROLS', this.form.controls);
+    console.log('FORM', this.form);
+    console.log('NOM', this.form.get('nom'));
   }
 
 
@@ -58,6 +60,7 @@ export class DynamicFormComponent implements OnInit, OnChanges {
   createControl() {
     const group = this.formBuilder.group({});
     this.fields.forEach(field => {
+      console.log('FIELDS==', this.fields);
       if (field.type === 'button') { return; }
       if (field.type === 'checkbox') {
         if (field.value === 'false' || field.value == null || field.value === '') {
