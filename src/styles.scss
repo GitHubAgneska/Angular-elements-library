@@ -1,3 +1,9 @@
+
+/* ===============  G E N E R A L  S T Y L E   ===========  */
+@import "fonts";
+@import "themes";
+@import "layout";
+
 // angular material default theme
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
@@ -24,7 +30,21 @@ input {
   color: white;
   border-radius: 5px;
   background-color: rgb(190, 190, 190);
+}
 
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.title {
+  font-family: $nunito;
+  color: $light-color;
+  opacity: 0.9;
+  text-transform: capitalize;
 }
 
 .mainTitle {
@@ -53,6 +73,229 @@ button {
   padding: 2%;
   border: none;
   color: white;
+  text-transform: uppercase;
   border-radius: 5px;
   background-color: rgb(192, 198, 255);
 }
+
+/*  Nunito font  ==============  */
+.nunito1 {
+  font-family: $nunito;
+  font-weight: 300;
+}
+
+/* =============================== D Y N A M I C   F O R M S   E L E M E N T S ================================  */
+
+
+.dynamic-form > app-button {
+  align-self: flex-end;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: $md-breakpoint) {
+  .dynamic-form > app-button {
+    align-self: initial;
+  }
+}
+
+
+app-checkbox,
+/* app-date,
+app-select */
+app-input,
+app-radiobutton,
+app-file-upload,
+app-button {
+  height: 5vh;
+  padding: 5%;
+}
+
+:host-context(app-materiel-form-step1) app-input{
+  height:10vh !important;
+}
+
+app-date, app-select {
+  padding: 5%;
+}
+
+app-textarea {
+  min-height: 5vh;
+  padding: 5%;
+}
+
+/*----- INPUT FIELDS --- */
+
+/* input fields labels */
+span > label {
+  color: $light-color !important;
+}
+
+/* date text from datepicker */
+.mat-form-field-infix > input {
+  color: $light-color !important;
+}
+
+/* input disabled  after validation */
+.mat-input-element:disabled {
+  color: $color-info !important;
+  font-size: $s-fz * 1.1 !important;
+}
+
+.mat-select-value:disabled {
+  color: $color-info;
+}
+
+/* fields labels */
+.mat-form-field {
+ /*  line-height: 1.5rem; */
+  font-size: $s-fz;
+  background-color: transparent;
+}
+
+
+/* space fields-labels -> line  */
+/* input.mat-input-element {
+  margin-top: 0.1rem;
+} */
+
+
+
+
+/* ----- BUTTONS  ------- */
+
+.mat-fab,
+.mat-flat-button,
+.mat-mini-fab,
+.mat-raised-button {
+  color: $light-color !important;
+  font-family: $montserrat;
+  font-weight: 600;
+  background-color: lighten($dark-color, 30) !important;
+  line-height: 25px;
+}
+
+.add-btn {
+  color: $light-color;
+  font-family: $montserrat;
+  line-height: 25px;
+  background-color: transparent !important;
+  border-radius: 15px;
+  border: 1px solid $light-color;
+  margin-right: 2rem;
+
+}
+
+.add-btn:hover {
+  background-color: lighten($dark-color, 30) !important;
+}
+
+.btn-info{
+  background-color: $color-info !important;
+}
+
+.btn-success{
+  background-color: $color-success !important;
+
+}
+
+.btn-danger, .btn-alert{
+  border:1px solid $color-alert !important;
+  background-color: $color-alert !important;
+}
+/*----- SELECT ------- */
+
+.mat-select-value {
+  color: $light-color !important;
+  font-size: $s-fz;
+}
+
+/*-----  DATE  ------- */
+
+.mat-datepicker-toggle {
+  color: $light-color;
+  font-size: $m-fz;
+  font-weight: regular;
+}
+
+
+.button-container,
+.button-container-matForm1 {
+  width: 70%;
+  margin: auto;
+}
+
+.button-container {
+  height: 5vh;
+}
+
+.cancel-button-container {
+
+  position: fixed;
+  height: 5vh;
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  bottom: 5%;
+}
+
+/*  ============================================  F O R M  S   &   F I C H E S  ============================================ */
+
+/* temporary : replaces forms titles as 'viewChild' not working when not parent-child components */
+.nouveauposte,
+.ficheTitle {
+  font-size: $s-fz;
+  color: $light-color;
+  font-family: $nunito;
+  border-bottom: 1px solid $light-color;
+  text-transform: uppercase;
+  padding-top: 3%;
+  margin: 0 5% 0 5%;
+}
+@media screen and (max-width: $md-breakpoint) {
+  .ficheTitle,
+  .nouveauposte {
+    font-size: $s-fz*0.9;
+    margin: 0 1% 0 1%;
+  }
+}
+
+
+/* forms 'next + back' ARROWS */
+.btn-container-small,
+.btn-container-big {
+  /* border:1px solid blue; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.nextBtn {
+  background-color: transparent important;
+  background: url("/assets/logos/icon_fwd_arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: 4rem;
+  width: 2rem;
+  border: none;
+  color: lighten($dark-color, 50);
+  font-size: $xs-fz;
+}
+
+.backBtn {
+  background-color: transparent important;
+  background: url("/assets/logos/icon_back_arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: 4rem;
+  width: 2rem;
+  border: none;
+}
+
+
+/* =================================================   E N D  ================================================================== */
+

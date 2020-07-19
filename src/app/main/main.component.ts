@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
   public angularLogo = '../assets/logos/angular_logo_custom.png';
 
   // header element dynamic title
-  public searchElementName = 'Basic search element';
+  public searchElementName = 'Basic search';
   // modal
   public modalWindow: boolean;
 
