@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
@@ -19,8 +21,7 @@ import { BigFicheTemplateComponent } from './layoutElements/tab-panels-templates
 import { SmallFicheTemplateComponent } from './layoutElements/tab-panels-templates/small-fiche-template/small-fiche-template.component';
 import { CharacterFormComponent } from './forms/character-form/character-form.component';
 
-/* ========= F O R M   M A T E R I A L =====================================================*/
-
+/* ========= F O R M S   & Angular  M A T E R I A L =====================================================*/
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DynamicFormComponent } from './layoutElements/forms/dynamic-form/dynamic-form.component';
 import { DynamicFieldDirective } from './layoutElements/forms/dynamic-field/dynamic-field.directive';
@@ -37,6 +38,25 @@ import { TextareaComponent } from './layoutElements/forms/form-components/textar
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ReactiveSearchComponent } from './reactive-search/reactive-search.component';
+import {  MatButtonModule,
+          MatIconModule,
+          MatCardModule,
+          MatFormFieldModule,
+          MatInputModule,
+          MatListModule,
+          MatNativeDateModule,
+          MatSelectModule,
+          MatOptionModule,
+          MatCheckboxModule,
+          MatChipsModule,
+          MatRadioModule,
+          MAT_DATE_LOCALE,
+          MatTableModule,
+          MatTabsModule,
+          MatProgressSpinnerModule,
+          MatSortModule,
+          MatDividerModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -63,17 +83,44 @@ import { ReactiveSearchComponent } from './reactive-search/reactive-search.compo
     ReactiveSearchComponent
   ],
   imports: [
-    BrowserModule,
-    CommonModule,
     HttpClientModule,
     AppRoutingModule,
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
-    MatDatepickerModule
+
+    MatDatepickerModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatProgressSpinnerModule,
+    MatSortModule,
+    MatTableModule,
+    MatChipsModule,
+    MatTabsModule,
+    MatDividerModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [ HttpClient, HttpErrorHandler, MessageService ],
+
+  providers: [
+    HttpClient,
+    HttpErrorHandler,
+    MessageService,
+    { provide: MAT_DATE_LOCALE, useValue: 'fr-FR' } ],
+
   bootstrap: [AppComponent],
+
   entryComponents: [
     DynamicFormComponent,
     InputComponent,

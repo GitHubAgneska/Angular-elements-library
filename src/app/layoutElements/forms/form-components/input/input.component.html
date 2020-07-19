@@ -1,7 +1,6 @@
 <mat-form-field class="myform-field" [formGroup]="group" appearance="legacy">
-  <input matInput [formControlName]="field.name" [placeholder]="field.label">
-<!--   <input matInput [formControlName]="field.name" [placeholder]="field.label" [type]="field.inputType">
- -->  <mat-hint></mat-hint>
+  <input matInput [formControlName]="field.name" [placeholder]="field.label" [type]="field.inputType" label="field.label">
+  <mat-hint></mat-hint>
   <ng-container *ngFor="let validation of field.validations;" ngProjectAs="mat-error">
     <mat-error *ngIf="group.get(field.name).hasError(validation.name)">{{validation.message}}</mat-error>
   </ng-container>

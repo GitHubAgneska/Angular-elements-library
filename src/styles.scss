@@ -23,14 +23,14 @@ p {
   font-family: Questrial, Arial, sans-serif;
 }
 
-input {
+/* input {
   width: 60%;
   padding: 2%;
   border: none;
   color: white;
   border-radius: 5px;
   background-color: rgb(190, 190, 190);
-}
+} */
 
 a {
   text-decoration: none;
@@ -79,6 +79,7 @@ button {
 }
 
 /*  Nunito font  ==============  */
+
 .nunito1 {
   font-family: $nunito;
   font-weight: 300;
@@ -148,18 +149,10 @@ span > label {
 /* fields labels */
 .mat-form-field {
  /*  line-height: 1.5rem; */
+  color: black;
   font-size: $s-fz;
   background-color: transparent;
 }
-
-
-/* space fields-labels -> line  */
-/* input.mat-input-element {
-  margin-top: 0.1rem;
-} */
-
-
-
 
 /* ----- BUTTONS  ------- */
 
@@ -182,7 +175,6 @@ span > label {
   border-radius: 15px;
   border: 1px solid $light-color;
   margin-right: 2rem;
-
 }
 
 .add-btn:hover {
@@ -228,15 +220,6 @@ span > label {
   height: 5vh;
 }
 
-.cancel-button-container {
-
-  position: fixed;
-  height: 5vh;
-  width: 70%;
-  margin: auto;
-  margin-top: 3%;
-  bottom: 5%;
-}
 
 /*  ============================================  F O R M  S   &   F I C H E S  ============================================ */
 
@@ -269,32 +252,6 @@ span > label {
   width: 100%;
 }
 
-
-.nextBtn {
-  background-color: transparent important;
-  background: url("/assets/logos/icon_fwd_arrow.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  display: inline-block;
-  height: 4rem;
-  width: 2rem;
-  border: none;
-  color: lighten($dark-color, 50);
-  font-size: $xs-fz;
-}
-
-.backBtn {
-  background-color: transparent important;
-  background: url("/assets/logos/icon_back_arrow.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  display: inline-block;
-  height: 4rem;
-  width: 2rem;
-  border: none;
-}
 
 
 /* =================================================   E N D  ================================================================== */

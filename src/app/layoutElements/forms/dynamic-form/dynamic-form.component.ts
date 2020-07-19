@@ -4,7 +4,8 @@ import { FieldConfig } from '../field.interface';
 
 @Component({
   exportAs: 'dynamicForm',
-  selector: 'app-dynamic-form', // + app-
+  // tslint:disable-next-line: component-selector
+  selector: 'dynamic-form', // + app-
   templateUrl: './dynamic-form.component.html',
   styleUrls: ['./dynamic-form.component.scss']
 })
