@@ -71,5 +71,14 @@
     "occupation":"",
     "quote": "",
     "img":""
+  },
+  { "id": 8,
+    "firstName":"Gale",
+    "lastName": "Boetticher",
+    "location":"",
+    "origin":"",
+    "occupation":"",
+    "quote": "To W.W. My Star, My Perfect Silence.",
+    "img":""
   }
 ]

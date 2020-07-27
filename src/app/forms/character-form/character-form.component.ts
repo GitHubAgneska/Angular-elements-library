@@ -79,7 +79,7 @@ export class CharacterFormComponent implements OnInit {
       this.propertyFieldConfig.inputType = 'text';
       this.propertyFieldConfig.label = prop.toLowerCase();
       this.propertyFieldConfig.name = prop.toLowerCase();
-      console.log('propertyfield=', this.propertyFieldConfig);
+      // console.log('propertyfield=', this.propertyFieldConfig);
       // make an array of the fieldConfig
       this.propertyFieldSConfig.push(this.propertyFieldConfig);
     });

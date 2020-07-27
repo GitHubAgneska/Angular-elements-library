@@ -57,6 +57,7 @@ import {  MatButtonModule,
           MatSortModule,
           MatDividerModule
 } from '@angular/material';
+import { UploadModalComponent } from './upload-modal/upload-modal.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import {  MatButtonModule,
     CheckboxComponent,
     FileUploadComponent,
     TextareaComponent,
-    ReactiveSearchComponent
+    ReactiveSearchComponent,
+    UploadModalComponent
   ],
   imports: [
     HttpClientModule,

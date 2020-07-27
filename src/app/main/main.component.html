@@ -7,29 +7,33 @@
 </div>
 
 
-<div>
+<div class="element">
   <app-header elementHeader="Modal element"></app-header>
   <button (click)="openModal()">open modal!</button>
   <app-modal *ngIf="modalWindow" (closeModal)="onCloseModal($event)"></app-modal>
 </div>
 
-<div>
+<div class="element">
   <app-header [elementHeader]="searchElementName"></app-header>
   <app-search></app-search>
 </div>
-<div>
+
+<div class="element">
   <app-header elementHeader="Reactive search"></app-header>
   <app-reactive-search></app-reactive-search>
 </div>
 
-
-<div>
+<div class="element">
   <app-header elementHeader="Dynamic Forms"></app-header>
   <app-forms></app-forms>
 </div>
 
+<div class="element">
+  <app-header elementHeader="File upload"></app-header>
+  <app-upload-modal></app-upload-modal>
+</div>
 
-<div>
+<div class="element">
   <app-header elementHeader="Click count"></app-header>
   <app-clickcount></app-clickcount>
 </div>

@@ -1,0 +1,13 @@
+
+<div class="form-group" [formGroup]="group">
+  <label for="file"></label>
+
+  <img id="outputImg" alt="Choose image!" width="100" height="100" />
+  <input type="file"
+    onchange="document.getElementById('outputImg').src = window.URL.createObjectURL(this.files[0])">
+</div>
+
+
+
+<img id="output">
+  <input type="file" accept="image/*" (change)="handleInput($event)">
