@@ -8,5 +8,6 @@ export class Character {
   public occupation = '';
   public quote = '';
   public img = '';
+  public imgUrl = '';
 
 }

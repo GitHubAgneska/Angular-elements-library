@@ -5,10 +5,10 @@
   type="text"
   id="user-input"
   (onChange)="onSearchInput()"
-  placeholder="Search for a character.."
+  placeholder="Type a name to see their quote!"
   [formControl]="name"
   value=''>
-  <p>
+  <p *ngIf="">
     Current search: {{ name.value }}
   </p>
 
@@ -21,5 +21,12 @@
       <h3>{{ character.firstName }} </h3>
       <h3>{{ character.lastName }}</h3>
     </div>
+    <div *ngIf="showQuote">
+      <h3 class="character-quote">"{{ character.quote }}"</h3>
+    </div>
   </div>
 </div>
+
+<ng-template *ngIf="noMatch">
+  <h2>SORRY NO MATCH !</h2>
+</ng-template>

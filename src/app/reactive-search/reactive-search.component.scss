@@ -1,6 +1,31 @@
 .character {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   border: 2px solid rgb(145, 145, 145);
   border-radius: 5px;
   margin: 2%;
   padding:2%;
+}
+.character-img > img{
+  max-width: 5rem;
+  border-radius: 5px;
+}
+.character-name {
+  max-width: 20%;
+}
+.character-quote {
+  max-width: 55%;
+  h3 {
+    color: orchid;}
+}
+
+input {
+  width: 60%;
+  padding: 2%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(190, 190, 190);
 }

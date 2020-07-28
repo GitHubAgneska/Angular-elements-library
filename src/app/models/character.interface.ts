@@ -8,4 +8,5 @@ export interface ICharacter {
   occupation: string;
   quote: string;
   img: string;
+  imgUrl: string;
 }

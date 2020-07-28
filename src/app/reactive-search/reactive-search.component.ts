@@ -15,16 +15,17 @@ export class ReactiveSearchComponent implements OnInit {
 
   public searchTerm: string;
   public name: FormControl;
-  public searching: any = false;
+  public showQuote: boolean;
+  public noMatch: boolean;
+
 
   constructor(private dataService: DataService) {
 
     this.character = new Character(); // TODO : replace by DEEP COPY
     this.searchTerm = '';
-
     this.name = new FormControl();
-
-
+    this.showQuote = false;
+    this.noMatch = false;
   }
 
   ngOnInit(): void {
@@ -49,20 +50,23 @@ export class ReactiveSearchComponent implements OnInit {
 
   public onSearchInput(event: any) {
     if ( this.name.value ) {
-      // const query = event.target.value.toLowerCase();
+   // const query = event.target.value.toLowerCase();
+   // const query = input[this.name.value];
       const query = this.name.value.toLowerCase();
       const elementsToFilter = Array.from(document.getElementsByClassName('characters-list')as HTMLCollectionOf<HTMLElement>);
-      // const query = input[this.name.value];
 
       elementsToFilter.forEach(item => {
-
-        // const shouldShow = item.textContent.toLowerCase().includes(this.name.value);
-        const shouldShow = item.textContent.toLowerCase().includes(query);
+     // const shouldShow = item.textContent.toLowerCase().includes(this.name.value);
+        const shouldShow = item.textContent.toLowerCase().includes(query) && (query.length > 4);
         item.style.display = shouldShow ? 'block' : 'none';
+        if (shouldShow) { this.showQuote = true; }
       });
+      const noMatch = elementsToFilter.forEach(item => ! item.textContent.toLowerCase().includes(query) && (query.length < 4));
 
-    } else {
+
+    } else if (!this.name.value) {
       this.loadData();
+      this.showQuote = false;
     }
   }
 

@@ -6,7 +6,8 @@
     "origin":"",
     "occupation":"",
     "quote": "I need a new dust filter for my hoover max extra pressure pro model 60, can you help me with that?",
-    "img":""
+    "img":"assets/images/saulGoodman.png",
+    "imgUrl": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc-DZTQ_lRi/w:357/h:358/q:75/https://bleedingcool.com/wp-content/uploads/2020/01/bcs5-2.jpg"
   },
   { "id": 2,
     "firstName":"Bojack",
@@ -15,7 +16,8 @@
     "origin":"",
     "occupation":"",
     "quote": "Every morning is a miracle.#EveryMorning.#Miracle.#EveryMorningIsAMiracle.",
-    "img":""
+    "img":"assets/images/bojackHorseman.png",
+    "imgUrl": "https://sm.ign.com/t/ign_fr/news/n/netflix-re/netflix-renews-bojack-horseman-for-season-5_wdm6.h720.jpg"
   },
   { "id": 3,
     "firstName":"Andy",
@@ -24,7 +26,8 @@
     "origin":"",
     "occupation":"",
     "quote": "I'm the guru of off-the-grid.. I'm off-the-grid Andy!",
-    "img":""
+    "img":"assets/images/andyBotwin.png",
+    "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81B+r4sSmzL._RI_.jpg"
   },
   { "id": 4,
     "firstName":"Tyrell",
@@ -33,7 +36,8 @@
     "origin":"",
     "occupation":"",
     "quote": "So much depends upon a red wheelbarrow..Glazed with rain water, besides the white chickens",
-    "img":""
+    "img":"assets/images/tyrellWallick.png",
+    "imgUrl": "https://vignette.wikia.nocookie.net/villains/images/9/9d/Tyrell_Wellick_S4.jpg/revision/latest?cb=20191029131501"
   },
   { "id": 5,
     "firstName":"Dale",
@@ -42,7 +46,8 @@
     "origin":"",
     "occupation":"",
     "quote": "Black as midnight in a moonless night",
-    "img":""
+    "img":"assets/images/daleCooper.png",
+    "imgUrl": "https://i.ytimg.com/vi/J6nXETr6-RE/maxresdefault.jpg"
   },
   { "id": 6,
     "firstName":"Nadia",
@@ -52,7 +57,8 @@
     "occupation":"",
     "name":"",
     "quote": "Staring down the barrel of my own mortality always beats fun.",
-    "img":""
+    "img":"assets/images/nadiaVulvokov.png",
+    "imgUrl": "https://www.anotterpointofview.com/wp-content/uploads/2019/02/inCollage_20190215_103136243-982x982.jpg"
   },
   { "id": 7,
     "firstName":"Fleabag",
@@ -61,7 +67,8 @@
     "origin":"",
     "occupation":"",
     "quote": "Sometimes I worry, I wouldn’t be such a feminist if I had bigger tits.",
-    "img":""
+    "img":"assets/images/fleabag.png",
+    "imgUrl": "https://am23.mediaite.com/tms/cnt/uploads/2019/05/phoebe-waller-bridge-fleabag-love-letter-1200x634.jpg"
   },
   { "id": 8,
     "firstName":"Roger",
@@ -70,7 +77,8 @@
     "origin":"",
     "occupation":"",
     "quote": "",
-    "img":""
+    "img":"assets/images/rogerSmith.png",
+    "imgUrl": "https://alchetron.com/cdn/roger-american-dad-1452aae4-af18-490e-9b18-36eb25d9010-resize-750.jpeg"
   },
   { "id": 8,
     "firstName":"Gale",
