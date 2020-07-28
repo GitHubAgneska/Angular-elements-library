@@ -58,6 +58,7 @@ import {  MatButtonModule,
           MatDividerModule
 } from '@angular/material';
 import { UploadModalComponent } from './upload-modal/upload-modal.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { UploadModalComponent } from './upload-modal/upload-modal.component';
     FileUploadComponent,
     TextareaComponent,
     ReactiveSearchComponent,
-    UploadModalComponent
+    UploadModalComponent,
+    SliderComponent
   ],
   imports: [
     HttpClientModule,

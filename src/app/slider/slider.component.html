@@ -1,0 +1,15 @@
+<div class="btn-container">
+  <button (click)="next()">next</button>
+  <button (click)="previous()">prev</button>
+</div>
+<div class="slider-container">
+  <img id="slider" src="{{ image }}"  class="img"/>
+</div>
+
+<div class="img-container">
+  <div *ngFor="let i of images" class="img">
+    <img src= "{{ i }}" />
+  </div>
+</div>
+
+
