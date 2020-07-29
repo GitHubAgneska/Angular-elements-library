@@ -1,0 +1,53 @@
+
+<div>
+  <form name="order" id="order">
+    <table>
+      <tr>
+        <td>
+          <label for="productID">Product ID:</label>
+        </td>
+        <td>
+          <input id="productId" name="product" type="text" size="28" required value=""/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="product">Product Desc:</label>
+        </td>
+        <td>
+          <input id="productDescription" name="product" type="text" size="28" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="quantity">Quantity:</label>
+        </td>
+        <td>
+          <input id="quantity" name="quantity" width="196px" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="price">Price:</label>
+        </td>
+        <td>
+          <input id="price" name="price" size="28" required />
+        </td>
+      </tr>
+    </table>
+    <input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset" />
+    <input type="button" id="btnAddProduct" (click)="addProduct()" value="Add New Product">
+  </form>
+
+  <p>New Product</p>
+  <div id="New product">
+
+  </div>
+
+  <h2> Shopping Cart content</h2>
+  <p id="cartContent"></p>
+
+  <h2>Grand Total:</h2>
+  <p id="Total"></p>
+
+</div>

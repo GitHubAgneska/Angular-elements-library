@@ -59,6 +59,7 @@ import {  MatButtonModule,
 } from '@angular/material';
 import { UploadModalComponent } from './upload-modal/upload-modal.component';
 import { SliderComponent } from './slider/slider.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { SliderComponent } from './slider/slider.component';
     TextareaComponent,
     ReactiveSearchComponent,
     UploadModalComponent,
-    SliderComponent
+    SliderComponent,
+    CartComponent
   ],
   imports: [
     HttpClientModule,

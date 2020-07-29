@@ -33,7 +33,6 @@ export class ReactiveSearchComponent implements OnInit {
     this.name.valueChanges.subscribe(search => {
       this.onSearchInput(this.name.value);
     } );
-
   }
 
   public loadData() {

@@ -5,29 +5,6 @@ import { map, catchError, retry } from 'rxjs/operators';
 import { HttpErrorHandler, HandleError } from './http-error-handler.service';
 import { Character } from './models/character.model';
 
-/* export class Character {
-  public id?: string | number;
-  public firstName: string;
-  public lastName: string;
-  public location: string;
-  public origin: string;
-  public occupation: string;
-  public quote: string;
-  public img: string;
-  public imgUrl: string;
-  constructor() {
-    this.firstName = '';
-    this.lastName = '';
-    this.location = '';
-    this.origin = '';
-    this.occupation = '';
-    this.quote = '';
-    this.img = '';
-    this.imgUrl = '';
-  }
-} */
-
-
 @Injectable({
   providedIn: 'root'
 })
